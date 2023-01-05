@@ -1,0 +1,33 @@
+@import '_variables';
+
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    background-color: $black;
+    font-family: $main-font;
+    font-size: 16px;
+    height: fit-content;
+    scroll-snap-type: y mandatory;
+}
+
+
+a:link,
+a:visited,
+a:hover,
+a:focus,
+a:active {
+    color: $white;
+    text-decoration: none;
+}
+
+
+//keyframes
+
+
+
+
