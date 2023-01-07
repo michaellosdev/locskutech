@@ -4,7 +4,6 @@ import AOS from 'aos'
 import Tilt from 'react-parallax-tilt'
 import Form from '../components/Form'
 import Modal from 'react-modal'
-import Slots from '../components/Slots'
 
 //modal styles
 import {modalStyles} from '../styles/modalStyles'
@@ -22,6 +21,7 @@ import moneyEyesEmoji from '../assets/money-emoji.png'
 import aboutUsPic from '../assets/about us.png'
 import lebarreBc from '../assets/lebarre-bc.JPG'
 import Footer from '../components/Footer'
+import LuckyWheel from '../components/LuckyWheel'
 //icons import
 
 
@@ -246,11 +246,14 @@ function Home() {
           </div>
 
           <h2>SEND US A MESSAGE</h2>
-          <div className='slots--container'>
-            <Slots />
-          </div>
           <div className='form--container' data-aos="fade-in">
             <Form />
+          </div>
+        </div>
+        <div className='wheel--container' data-aos="fade-in">
+          <h2>SPIN FOR SOMETHING NICE</h2>
+          <div>
+            <LuckyWheel />
           </div>
         </div>
         <Footer />
