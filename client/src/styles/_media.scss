@@ -99,7 +99,7 @@
 }
 
 
-@media (max-width: 1120px) {
+@media (max-width: 1280px) {
     nav {
         font-size: 1.1rem;
 
@@ -227,6 +227,30 @@
 
         button {
             width: 100%;
+        }
+    }
+    .wheel--container {
+        overflow: hidden;
+        scroll-snap-align: none;
+        height: 600px;
+
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+
+        // #wheel {
+        //     width: 4500px;
+
+        // }
+
+        #canvas {
+            width: 700px;
+            position: absolute;
+            left: 30%;
+            
+
         }
     }
 
@@ -383,6 +407,31 @@
     .contact--section {
         h2 {
             font-size: 3.8rem;
+        }
+    }
+
+    .wheel--container {
+        overflow: hidden;
+        scroll-snap-align: none;
+        height: 600px;
+
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+
+        // #wheel {
+        //     width: 4500px;
+
+        // }
+
+        #canvas {
+            width: 700px;
+            position: absolute;
+            left: 30%;
+            transform: translate(-8%);
+
         }
     }
 
@@ -675,6 +724,31 @@
     .circles--container {
        width: 100%;
        left: 0;
+    }
+
+    .wheel--container {
+        overflow: hidden;
+        scroll-snap-align: none;
+        height: 600px;
+
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+
+        // #wheel {
+        //     width: 4500px;
+
+        // }
+
+        #canvas {
+            width: 600px;
+            position: absolute;
+            left: 30%;
+            transform: translate(-17%);
+
+        }
     }
 
    
@@ -977,7 +1051,31 @@
        left: 0;
     }
 
-   
+    .wheel--container {
+        overflow: hidden;
+        scroll-snap-align: none;
+        height: 600px;
+
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+
+        // #wheel {
+        //     width: 4500px;
+
+        // }
+
+        #canvas {
+            width: 500px;
+            position: absolute;
+            left: 30%;
+            transform: translate(-18%);
+
+        }
+    }
+    
     footer { 
         scroll-snap-align: none;
         
@@ -989,6 +1087,7 @@
             }
         }
     }
+
 
 }
 

@@ -458,91 +458,91 @@ nav .navlinks--container a:hover {
 }
 
 .circles--container .circle-1 {
-  width: 205px;
-  height: 205px;
-  top: 32%;
-  left: 98%;
-  opacity: 0.3;
+  width: 102px;
+  height: 102px;
+  top: 67%;
+  left: 18%;
+  opacity: 0.5;
   -webkit-animation: circleFloat-1 20s ease-in-out infinite;
           animation: circleFloat-1 20s ease-in-out infinite;
 }
 
 .circles--container .circle-2 {
-  width: 189px;
-  height: 189px;
-  top: 58%;
-  left: 48%;
-  opacity: 0.2;
+  width: 117px;
+  height: 117px;
+  top: 86%;
+  left: 40%;
+  opacity: 0.3;
   -webkit-animation: circleFloat-2 20s ease-in-out infinite;
           animation: circleFloat-2 20s ease-in-out infinite;
 }
 
 .circles--container .circle-3 {
-  width: 65px;
-  height: 65px;
-  top: 10%;
-  left: 4%;
-  opacity: 0.4;
+  width: 56px;
+  height: 56px;
+  top: 84%;
+  left: 74%;
+  opacity: 0.3;
   -webkit-animation: circleFloat-3 20s ease-in-out infinite;
           animation: circleFloat-3 20s ease-in-out infinite;
 }
 
 .circles--container .circle-4 {
-  width: 216px;
-  height: 216px;
-  top: 79%;
-  left: 74%;
-  opacity: 0.3;
+  width: 188px;
+  height: 188px;
+  top: 81%;
+  left: 3%;
+  opacity: 0.1;
   -webkit-animation: circleFloat-4 20s ease-in-out infinite;
           animation: circleFloat-4 20s ease-in-out infinite;
 }
 
 .circles--container .circle-5 {
-  width: 194px;
-  height: 194px;
-  top: 9%;
-  left: 14%;
-  opacity: 0.3;
+  width: 249px;
+  height: 249px;
+  top: 15%;
+  left: 69%;
+  opacity: 0.5;
   -webkit-animation: circleFloat-5 20s ease-in-out infinite;
           animation: circleFloat-5 20s ease-in-out infinite;
 }
 
 .circles--container .circle-7 {
-  width: 33px;
-  height: 33px;
-  top: 31%;
-  left: 79%;
-  opacity: 0.5;
+  width: 27px;
+  height: 27px;
+  top: 85%;
+  left: 23%;
+  opacity: 0.3;
   -webkit-animation: circleFloat-7 20s ease-in-out infinite;
           animation: circleFloat-7 20s ease-in-out infinite;
 }
 
 .circles--container .circle-8 {
-  width: 235px;
-  height: 235px;
-  top: 50%;
-  left: 29%;
-  opacity: 0.2;
+  width: 96px;
+  height: 96px;
+  top: 20%;
+  left: 4%;
+  opacity: 0.5;
   -webkit-animation: circleFloat-8 20s ease-in-out infinite;
           animation: circleFloat-8 20s ease-in-out infinite;
 }
 
 .circles--container .circle-9 {
-  width: 207px;
-  height: 207px;
-  top: 7%;
-  left: 92%;
-  opacity: 0.5;
+  width: 4px;
+  height: 4px;
+  top: 82%;
+  left: 26%;
+  opacity: 0.4;
   -webkit-animation: circleFloat-9 20s ease-in-out infinite;
           animation: circleFloat-9 20s ease-in-out infinite;
 }
 
 .circles--container .circle-10 {
-  width: 114px;
-  height: 114px;
-  top: 28%;
-  left: 9%;
-  opacity: 0.2;
+  width: 175px;
+  height: 175px;
+  top: 24%;
+  left: 93%;
+  opacity: 0.3;
   -webkit-animation: circleFloat-10 20s ease-in-out infinite;
           animation: circleFloat-10 20s ease-in-out infinite;
 }
@@ -552,8 +552,8 @@ nav .navlinks--container a:hover {
     margin-top: 0;
   }
   50% {
-    margin-top: 178px;
-    margin-left: 26px;
+    margin-top: 19px;
+    margin-left: 113px;
   }
   100% {
     margin-top: 0px;
@@ -565,8 +565,8 @@ nav .navlinks--container a:hover {
     margin-top: 0;
   }
   50% {
-    margin-top: 178px;
-    margin-left: 26px;
+    margin-top: 19px;
+    margin-left: 113px;
   }
   100% {
     margin-top: 0px;
@@ -578,8 +578,8 @@ nav .navlinks--container a:hover {
     margin-top: 0;
   }
   50% {
-    margin-top: 19px;
-    margin-left: 182px;
+    margin-top: 69px;
+    margin-left: 105px;
   }
   100% {
     margin-top: 0px;
@@ -591,8 +591,8 @@ nav .navlinks--container a:hover {
     margin-top: 0;
   }
   50% {
-    margin-top: 19px;
-    margin-left: 182px;
+    margin-top: 69px;
+    margin-left: 105px;
   }
   100% {
     margin-top: 0px;
@@ -604,8 +604,8 @@ nav .navlinks--container a:hover {
     margin-top: 0;
   }
   50% {
-    margin-top: 105px;
-    margin-left: 163px;
+    margin-top: 82px;
+    margin-left: 186px;
   }
   100% {
     margin-top: 0px;
@@ -617,8 +617,8 @@ nav .navlinks--container a:hover {
     margin-top: 0;
   }
   50% {
-    margin-top: 105px;
-    margin-left: 163px;
+    margin-top: 82px;
+    margin-left: 186px;
   }
   100% {
     margin-top: 0px;
@@ -630,8 +630,8 @@ nav .navlinks--container a:hover {
     margin-top: 0;
   }
   50% {
-    margin-top: 24px;
-    margin-left: 94px;
+    margin-top: 158px;
+    margin-left: 134px;
   }
   100% {
     margin-top: 0px;
@@ -643,8 +643,8 @@ nav .navlinks--container a:hover {
     margin-top: 0;
   }
   50% {
-    margin-top: 24px;
-    margin-left: 94px;
+    margin-top: 158px;
+    margin-left: 134px;
   }
   100% {
     margin-top: 0px;
@@ -656,8 +656,8 @@ nav .navlinks--container a:hover {
     margin-top: 0;
   }
   50% {
-    margin-top: 156px;
-    margin-left: 172px;
+    margin-top: 21px;
+    margin-left: 61px;
   }
   100% {
     margin-top: 0px;
@@ -669,8 +669,8 @@ nav .navlinks--container a:hover {
     margin-top: 0;
   }
   50% {
-    margin-top: 156px;
-    margin-left: 172px;
+    margin-top: 21px;
+    margin-left: 61px;
   }
   100% {
     margin-top: 0px;
@@ -682,8 +682,8 @@ nav .navlinks--container a:hover {
     margin-top: 0;
   }
   50% {
-    margin-top: 16px;
-    margin-left: 92px;
+    margin-top: 58px;
+    margin-left: 199px;
   }
   100% {
     margin-top: 0px;
@@ -695,8 +695,8 @@ nav .navlinks--container a:hover {
     margin-top: 0;
   }
   50% {
-    margin-top: 16px;
-    margin-left: 92px;
+    margin-top: 58px;
+    margin-left: 199px;
   }
   100% {
     margin-top: 0px;
@@ -708,8 +708,8 @@ nav .navlinks--container a:hover {
     margin-top: 0;
   }
   50% {
-    margin-top: 20px;
-    margin-left: 7px;
+    margin-top: 77px;
+    margin-left: 70px;
   }
   100% {
     margin-top: 0px;
@@ -721,8 +721,8 @@ nav .navlinks--container a:hover {
     margin-top: 0;
   }
   50% {
-    margin-top: 20px;
-    margin-left: 7px;
+    margin-top: 77px;
+    margin-left: 70px;
   }
   100% {
     margin-top: 0px;
@@ -734,8 +734,8 @@ nav .navlinks--container a:hover {
     margin-top: 0;
   }
   50% {
-    margin-top: 168px;
-    margin-left: 7px;
+    margin-top: 187px;
+    margin-left: 189px;
   }
   100% {
     margin-top: 0px;
@@ -747,8 +747,8 @@ nav .navlinks--container a:hover {
     margin-top: 0;
   }
   50% {
-    margin-top: 168px;
-    margin-left: 7px;
+    margin-top: 187px;
+    margin-left: 189px;
   }
   100% {
     margin-top: 0px;
@@ -760,8 +760,8 @@ nav .navlinks--container a:hover {
     margin-top: 0;
   }
   50% {
-    margin-top: 155px;
-    margin-left: 122px;
+    margin-top: 94px;
+    margin-left: 28px;
   }
   100% {
     margin-top: 0px;
@@ -773,8 +773,8 @@ nav .navlinks--container a:hover {
     margin-top: 0;
   }
   50% {
-    margin-top: 155px;
-    margin-left: 122px;
+    margin-top: 94px;
+    margin-left: 28px;
   }
   100% {
     margin-top: 0px;
@@ -786,8 +786,8 @@ nav .navlinks--container a:hover {
     margin-top: 0;
   }
   50% {
-    margin-top: 58px;
-    margin-left: 15px;
+    margin-top: 44px;
+    margin-left: 179px;
   }
   100% {
     margin-top: 0px;
@@ -799,8 +799,8 @@ nav .navlinks--container a:hover {
     margin-top: 0;
   }
   50% {
-    margin-top: 58px;
-    margin-left: 15px;
+    margin-top: 44px;
+    margin-left: 179px;
   }
   100% {
     margin-top: 0px;
@@ -1584,6 +1584,10 @@ footer .footer--info-container img {
   display: -ms-flexbox;
   display: flex;
   opacity: 0.7;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border-radius: 40px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1592,6 +1596,12 @@ footer .footer--info-container img {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 20px;
+}
+
+.contact--section .form--container div h4 {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #d2e1e1;
 }
 
 .wheel--container {
@@ -1678,7 +1688,7 @@ footer .footer--info-container img {
   }
 }
 
-@media (max-width: 1120px) {
+@media (max-width: 1280px) {
   nav {
     font-size: 1.1rem;
   }
@@ -1782,6 +1792,20 @@ footer .footer--info-container img {
   }
   form button {
     width: 100%;
+  }
+  .wheel--container {
+    overflow: hidden;
+    scroll-snap-align: none;
+    height: 600px;
+  }
+  .wheel--container h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .wheel--container #canvas {
+    width: 700px;
+    position: absolute;
+    left: 30%;
   }
   footer {
     scroll-snap-align: none;
@@ -1901,6 +1925,22 @@ footer .footer--info-container img {
   }
   .contact--section h2 {
     font-size: 3.8rem;
+  }
+  .wheel--container {
+    overflow: hidden;
+    scroll-snap-align: none;
+    height: 600px;
+  }
+  .wheel--container h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .wheel--container #canvas {
+    width: 700px;
+    position: absolute;
+    left: 30%;
+    -webkit-transform: translate(-8%);
+            transform: translate(-8%);
   }
 }
 
@@ -2142,6 +2182,22 @@ footer .footer--info-container img {
   .circles--container {
     width: 100%;
     left: 0;
+  }
+  .wheel--container {
+    overflow: hidden;
+    scroll-snap-align: none;
+    height: 600px;
+  }
+  .wheel--container h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .wheel--container #canvas {
+    width: 600px;
+    position: absolute;
+    left: 30%;
+    -webkit-transform: translate(-17%);
+            transform: translate(-17%);
   }
   footer {
     overflow: hidden;
@@ -2390,6 +2446,22 @@ footer .footer--info-container img {
   .circles--container {
     width: 100%;
     left: 0;
+  }
+  .wheel--container {
+    overflow: hidden;
+    scroll-snap-align: none;
+    height: 600px;
+  }
+  .wheel--container h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .wheel--container #canvas {
+    width: 500px;
+    position: absolute;
+    left: 30%;
+    -webkit-transform: translate(-18%);
+            transform: translate(-18%);
   }
   footer {
     scroll-snap-align: none;

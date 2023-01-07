@@ -248,14 +248,18 @@ function Home() {
           <h2>SEND US A MESSAGE</h2>
           <div className='form--container' data-aos="fade-in">
             <Form />
+            <div>
+              {localStorage.getItem('prize') === 'nothing' ? ' ' :  <h4>YOUR CODE: {localStorage.getItem('prize')}</h4> }
+              
+            </div>
           </div>
         </div>
-        <div className='wheel--container' data-aos="fade-in">
+               {localStorage.getItem('prize') ?  ' ':  <div className='wheel--container' data-aos="fade-in">
           <h2>SPIN FOR SOMETHING NICE</h2>
           <div>
-            <LuckyWheel />
+          <LuckyWheel />
           </div>
-        </div>
+        </div> }
         <Footer />
     </div>
   )
