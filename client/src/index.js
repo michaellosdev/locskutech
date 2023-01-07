@@ -7,6 +7,7 @@ import App from './App';
 import './styles/main.css'
 //AOS library
 import 'aos/dist/aos.css';
+import 'slot-machine-gen/dist/slot-machine.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

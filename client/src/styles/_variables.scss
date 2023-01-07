@@ -38,3 +38,38 @@ $white-25: rgba(210, 225, 225, 0.25);
 $main-font: 'Montserrat', sans-serif;
 $secondary-font: 'Covered By Your Grace', cursive;
 
+:export {
+    yellow: $yellow;
+    yellow-75: $yellow-75;
+    yellow-50: $yellow-50;
+    yellow-25: $yellow-25;
+    blue:$blue;
+    blue-75:$blue-75;
+    blue-50:$blue-50;
+    blue-25:$blue-25;
+    black:$black;
+    black-75:$black-75;
+    black-50:$black-50;
+    black-25:$black-25;
+
+    red:$red;
+    red-75:$red-75;
+    red-50:$red-50;
+    red-25:$red-25;
+
+    green:$green;
+    green-75:$green-75;
+    green-50:$green-50;
+    green-25:$green-25;
+
+    pink:$pink;
+    pink-75:$pink-75;
+    pink-50:$pink-50;
+    pink-25:$pink-25;
+
+    white :$white;
+    white-75:$white-75;
+    white-50:$white-50;
+    white-25:$white-25;
+   
+}

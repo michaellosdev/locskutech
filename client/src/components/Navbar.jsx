@@ -15,7 +15,7 @@ const openMenu = (e) => {
   setOpen(!open)
   if(open === true) {
    mobileMenu.current.style.display = 'flex'
-   menuBtn.current.style.display = 'inline'
+   menuBtn.current.style.display = 'block'
    menuBtn.current.style.color = 'black'
    document.body.style.overflow = 'hidden'
   } else {
@@ -31,21 +31,21 @@ const openMenu = (e) => {
       <div className='logo--container'>
         <img src={logoWhite} alt="" />
         <p>LOSKUTECH</p>
-        <div onClick={openMenu}  className='mobile-nav--btn'><span ref={menuBtn}>CLOSE</span> MENU</div>
       </div>
+        <div onClick={openMenu}  className='mobile-nav--btn'><span ref={menuBtn}>CLOSE</span> MENU</div>
       <div className='mobile-navlinks--container' ref={mobileMenu}>
-        <a href="#" onClick={openMenu} >HOME</a>
-        <a href="#" onClick={openMenu}>ABOUT</a>
-        <a href="#" onClick={openMenu}>SERVICES</a>
-        <a href="#" onClick={openMenu}>OUR WORK</a>
-        <a href="#" onClick={openMenu}>CONTACT US</a>
+        <a href="#home" onClick={openMenu} >HOME</a>
+        <a href="#about" onClick={openMenu}>ABOUT</a>
+        <a href="#services" onClick={openMenu}>SERVICES</a>
+        <a href="#our-work" onClick={openMenu}>OUR WORK</a>
+        <a href="#contact" onClick={openMenu}>CONTACT US</a>
       </div>
       <div className='navlinks--container'>
-        <a href="#">HOME</a>
-        <a href="#">ABOUT</a>
-        <a href="#">SERVICES</a>
-        <a href="#">OUR WORK</a>
-        <a href="#">CONTACT US</a>
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#services">SERVICES</a>
+        <a href="#our-work">OUR WORK</a>
+        <a href="#contact">CONTACT US</a>
       </div>
     </nav>
   )

@@ -1,7 +1,18 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState, useRef} from 'react'
 import Navbar from '../components/Navbar'
 import AOS from 'aos'
 import Tilt from 'react-parallax-tilt'
+import Form from '../components/Form'
+import Modal from 'react-modal'
+import Slots from '../components/Slots'
+
+//modal styles
+import {modalStyles} from '../styles/modalStyles'
+
+import Expand from 'react-expand-animated';
+
+//data
+import {cards} from '../data/cardsData'
 
 
 //assets import
@@ -10,32 +21,38 @@ import cameraEmoji from '../assets/camera-emoji.png'
 import moneyEyesEmoji from '../assets/money-emoji.png'
 import aboutUsPic from '../assets/about us.png'
 import lebarreBc from '../assets/lebarre-bc.JPG'
+import Footer from '../components/Footer'
 //icons import
-import webDevIcon from '../assets/icons/code.png'
-import cameraIcon from '../assets/icons/camera.png'
-import brandingIcon from '../assets/icons/branding.png'
-import graphicDesignIcon from '../assets/icons/graphic-design.png'
-import adManagmentIcon from '../assets/icons/manage.png'
-import appDevelopmentIcon from '../assets/icons/mobile-development.png'
-import seoIcon from '../assets/icons/seo.png'
-import smmIcon from '../assets/icons/social-media.png'
+
 
 
 function Home() {
+  const [modalOpen, setModalOpen] = useState(false)
+  const [modalData, setModalData] = useState(null)
+  const [play, setPlay] = useState(false)
+  
+  const backdrop = useRef(null)
+  const modal =(e) => {
+    setModalOpen(true)
+    document.body.style.overflow = 'hidden'
+    backdrop.current.style.zIndex = 1
+  }
+
+  
+
+  
+
+
   useEffect(() => {
     AOS.init();
   }, [])
 
   return (
-    <div className='home--page'>
+    <div className='home--page' id='home'>
             <Navbar />
         <div className='hero--section' id='hero'  >
           <h1 data-aos="fade-up">THE LAST WEB AGENCY YOU WILL COME TO.</h1>
-          {/* <div className='emojis--container' data-aos="fade-up">
-            <img src={starEyesEmoji} alt="" />
-            <img src={cameraEmoji} alt="" />
-            <img src={moneyEyesEmoji} alt="" />
-          </div> */}
+          <button className='btn' data-aos="fade-up"><a href='#contact'>CLICK TO GROW YOUR BUSINESS</a></button>
           <a href="#about"><div className='down-arrow'></div></a>
         </div>
 
@@ -60,189 +77,84 @@ function Home() {
         </div>
 
         {/* services section */}
-        <div className='services--section'>
+        <div className='services--section' id='services'>
           <h2 data-aos="fade-down">WHAT DO WE DO</h2>
           <div className='cards--container' data-aos="fade-down">
-          
+        {cards.map((card, index) => (
           
           <Tilt 
-          
-          className='card card-1' 
+          className={`card card-${index + 1}` }
           glareEnable = 'true'
           gyroscope='true'
           glareBorderRadius='20px'
           perspective={2000}
+          key={index}
           >
-              <div className='card-header' >
-                <img src={webDevIcon} alt="" />
-                <h3>WEB DEVELOPMENT</h3>
+              <div className='card-header' onClick={() => {
+                modal();
+                setModalData(card)
+              }}>
+                <img src={card.icon} alt="" />
+                <h3>{card.name}</h3>
               </div>
-              <div className="card-body">
+          
+              <div className="card-body" onClick={() => {
+                modal();
+                setModalData(card)
+              }} >
                 <p>
-                  Our web design service helps clients create professional, effective websites. We handle all aspects of design, from planning and structure to visual appearance and functionality. Our team uses the latest tools and technologies, such as HTML, CSS, and JavaScript, to build websites that are easy to navigate and provide a great user experience. 
+                  {card.desc}
                 </p>
               </div>
-              <div className="card-footer">
-                <h4>starting at $500</h4>
+              <div className="card-footer" onClick={() => {
+                modal();
+                setModalData(card)
+              }}>
+                <h4>starting at ${card.price}</h4>
               </div>
           </Tilt>
-
-          <Tilt 
-          className='card card-2' 
-          glareEnable = 'true'
-          gyroscope='true'
-          glareBorderRadius='20px'
-          perspective={2000}
-          
-          >
-              <div className='card-header'>
-                <img src={cameraIcon} alt="" />
-                <h3>CONTENT CREATION</h3>
-              </div>
-              <div className="card-body">
-                <p>
-                Our content creation service helps clients produce high-quality, engaging content for their online platforms. Our team can create a wide range of content types, including blog posts, articles, social media posts, and more. We work with clients to understand their business goals and target audience, and develop content that is relevant, informative, and aligned with their brand voice. 
-                </p>
-              </div>
-              <div className="card-footer">
-              <h4>starting at $500</h4>
-              </div>
-          </Tilt>
-
-          <Tilt 
-          className='card card-3' 
-          glareEnable = 'true'
-          gyroscope='true'
-          glareBorderRadius='20px'
-          perspective={2000}
-          
-          >
-              <div className='card-header'>
-                <img src={seoIcon} alt="" />
-                <h3>SEO</h3>
-              </div>
-              <div className="card-body">
-                <p>
-                Our SEO service helps clients improve their website's visibility and ranking on search engines like Google. We use a variety of tactics, including keyword research, on-page optimization, and link building, to help our clients' websites rank higher in search results and attract more qualified traffic. Our team of SEO experts stays up-to-date on the latest best practices and algorithms to ensure that our clients' websites are optimized for success.
-                </p>
-              </div>
-              <div className="card-footer">
-                <h4>starting at $500</h4>
-              </div>  
-          </Tilt>
-
-          <Tilt 
-          className='card card-4' 
-          glareEnable = 'true'
-          gyroscope='true'
-          glareBorderRadius='20px'
-          perspective={2000}
-          
-          >
-              <div className='card-header'>
-                <img src={graphicDesignIcon} alt="" />
-                <h3>GRAPHIC DESIGN</h3>
-              </div>
-              <div className="card-body">
-                <p>
-                Our graphic design service helps clients create visually appealing and effective graphics for their websites and other online platforms. Our skilled graphic designers can create a wide range of graphics, including logos, banners, infographics, social media posts, and more. We work closely with clients to understand their brand and design goals, and develop graphics that are on-brand and aligned with their marketing strategy. 
-                </p>
-              </div>
-              <div className="card-footer">
-              <h4>starting at $500</h4>
-              </div>
-          </Tilt>
-
-          <Tilt 
-          className='card card-5' 
-          glareEnable = 'true'
-          gyroscope='true'
-          glareBorderRadius='20px'
-          perspective={2000}
-          
-          >
-              <div className='card-header'>
-                <img src={appDevelopmentIcon} alt="" />
-                <h3>APP DEVELOPMENT</h3>
-              </div>
-              <div className="card-body">
-                <p>
-                Our app development service helps clients create custom mobile or web applications for their business or personal needs. Our experienced app developers can build a wide range of apps, including e-commerce platforms, social media apps, productivity tools, and more. We work with clients to understand their requirements and develop an app that meets their needs and goals. 
-                </p>
-              </div>
-              <div className="card-footer">
-              <h4>starting at $500</h4>
-              </div>
-          </Tilt>
-
-          <Tilt 
-          className='card card-6' 
-          glareEnable = 'true'
-          gyroscope='true'
-          glareBorderRadius='20px'
-          perspective={2000}
-          
-          >
-              <div className='card-header'>
-                <img src={smmIcon} alt="" />
-                <h3>SMM</h3>
-              </div>
-              <div className="card-body">
-                <p>
-                Our social media marketing (SMM) service helps clients promote their business and engage with their audience on social media platforms. Our team of social media experts can create and execute a customized SMM strategy that aligns with our clients' business goals and target audience. We also offer social media analytics and reporting to help our clients track the success of their campaigns and identify areas for improvement.
-                </p>
-              </div>
-              <div className="card-footer">
-              <h4>starting at $500</h4>
-              </div>
-          </Tilt>
-
-          <Tilt 
-          className='card card-7'
-          glareEnable = 'true'
-          gyroscope='true'
-          glareBorderRadius='20px'
-          perspective={2000}
-          
-          >
-              <div className='card-header'>
-                <img src={adManagmentIcon} alt="" />
-                <h3>AD MANAGEMENT</h3>
-              </div>
-              <div className="card-body">
-                <p>
-                Our ad management service helps clients create and manage successful online advertising campaigns. Our ad management service includes creating and setting up ad campaigns, targeting the right audience, testing and optimizing ads, and tracking the results of the campaigns. We offer ad management for a variety of platforms, including Google Ads, Facebook Ads, and more.
-                </p> 
-              </div>
-              <div className="card-footer">
-              <h4>starting at $500</h4>
-              </div>
-          </Tilt>
-
-          <Tilt 
-          className='card card-8'
-          glareEnable = 'true'
-          gyroscope='true'
-          glareBorderRadius='20px'
-          perspective={2000}
-          
-          >
-              <div className='card-header'>
-                <img src={brandingIcon} alt="" />
-                <h3>BRANDING</h3>
-              </div>
-              <div className="card-body">
-                <p>
-                Our branding service helps clients develop and strengthen their brand identity. Our team work with clients to understand their business and goals, and create a unique and consistent brand image that reflects their values and personality. Our branding service includes researching and developing brand guidelines, creating logos and other visual elements, and developing a brand voice. Our branding service helps clients build a strong, cohesive brand.
-                </p>
-              </div>
-              <div className="card-footer">
-              <h4>starting at $500</h4>
-              </div>
-          </Tilt> 
+        ))}
+        {modalOpen ? <Modal
+        className={`Modal Modal-${modalData.id}`}
+        overlayClassName="Overlay"
+        onRequestClose={(e) => {
+          setModalOpen(false)
+        }}
+        isOpen={modalOpen}
+        // style={modalStyles}
+        >
+          <div onClick={() => {
+            document.body.style.overflow = 'auto'
+            backdrop.current.style.zIndex = -99
+            setModalOpen(false)
+          }
+        } className='modal-btn'>
+            <div className='line-1'></div>
+            <div className='line-2'></div>
           </div>
+          <div className='modal-header'>
+            <img src={modalData.icon} alt="" />
+            <h2>{modalData.name}</h2>
+          </div>
+          <div className='modal-body'>
+            <article>
+              {modalData.longDesc}
+            </article>
+          </div>
+          <div className='modal-footer'>
+            <button onClick={() => 
+              {setModalOpen(false); 
+              document.body.style.overflow = 'auto';
+              backdrop.current.style.zIndex = -99
+              }}><a href='#contact'>CONTACT US</a></button>
+            <h4>STARTING AT ${modalData.price}</h4>
+          </div>
+
+        </Modal>: ''}
+          </div>
+        <div className='backdrop' ref={backdrop}></div>
         </div>
-        <div className='our-work--section' >
+        <div className='our-work--section' id='our-work'>
           <h2 data-aos="fade-down">OUR RECENT WORK</h2>
           <div className='our-work--container' data-aos="fade-down">
 
@@ -318,6 +230,30 @@ function Home() {
             
           </div>
         </div>
+
+        <div className='contact--section' data-aos="fade-in" id='contact'>
+          <div className='circles--container'>
+            <div className='circle-1 circle' ></div>
+            <div className='circle-2 circle'></div>
+            <div className='circle-3 circle'></div>
+            <div className='circle-4 circle'></div>
+            <div className='circle-5 circle'></div>
+            {/* <div className='circle-6 circle'></div> */}
+            <div className='circle-7 circle'></div>
+            <div className='circle-8 circle'></div>
+            <div className='circle-9 circle'></div>
+            <div className='circle-10 circle'></div>
+          </div>
+
+          <h2>SEND US A MESSAGE</h2>
+          <div className='slots--container'>
+            <Slots />
+          </div>
+          <div className='form--container' data-aos="fade-in">
+            <Form />
+          </div>
+        </div>
+        <Footer />
     </div>
   )
 }

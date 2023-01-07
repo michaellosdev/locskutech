@@ -1,11 +1,246 @@
-@media (max-width: 480px) {
+@media (max-width: 1800px) {
+    .about-us--section {
+        .about-us-text--container {
+            h2 {
+                font-size: 5rem;
+            }
 
-    //nav 
+            article {
+                font-size: 1.5rem;
+            }
+        }
+
+        .hello-text {
+            
+            h2 {
+                font-size: 6rem;
+            }
+        }
+    }
+
+    //services
+
+    .services--section {
+        .cards--container {
+            .card {
+                .card-header {
+                    h3 {
+                        font-size: 1rem;
+                    }
+                }
+
+                .card-body {
+                    p {
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
+    }
+
+}
 
 
+@media (max-width:1350px) {
+    nav {
+        font-size: 1.5rem;
+
+        .navlinks--container {
+            a {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .hero--section {
+        h1 {
+            font-size: 7rem;
+        }
+    }
+
+    .about-us--section {
+        .about-us-text--container {
+            h2 {
+                font-size: 4rem;
+            }
+
+            article {
+                font-size: 1.4rem;
+            }
+        }
+
+        .hello-text {
+            h2 {
+                font-size: 5rem;
+            }
+        }
+    }
+
+    .services--section {
+        h2 {
+            font-size: 5rem;
+        }
+
+        .cards--container {
+
+            .card {
+                height: 45%;
+
+                .card-body {
+
+                    p {
+                        font-size: 0.65rem;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1120px) {
+    nav {
+        font-size: 1.1rem;
+
+        .navlinks--container {
+            a {
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    .hero--section {
+        scroll-snap-align: none;
+    }
+
+    .about-us--section {
+        scroll-snap-align: none;
+        .about-us-text--container {
+            h2 {
+                font-size: 3rem;
+            }
+
+            article {
+                font-size: 1.3rem;
+            }
+        }
+
+        .hello-text {
+            h2 {
+                font-size: 4rem;
+            }
+        }
+    }
+
+    .services--section {
+        scroll-snap-align: none;
+        height: fit-content;
+        h2 {
+            font-size: 4.5rem;
+        }
+
+        .cards--container {
+            height: 2000px;
+            .card {
+                width: 44%;
+                height: 20%;
+
+                .card-body {
+
+                    p {
+                        font-size: 1rem;
+                    }
+                }
+                
+            }
+        }
+    }
+
+    .modal-footer {
+        button {
+            font-size: 1.5rem;
+        }
+
+        h4 {
+            font-size: 2.5rem;
+        }
+    }
+
+    .our-work--section {
+        height: fit-content;
+        scroll-snap-align: none;
+
+        h2 {
+            font-size: 4.5rem;
+        }
+
+        .our-work--container {
+            height: 2000px;
+            .work-card {
+                height: 30%;
+                width: 100%;
+            }
+        }
+    }
+
+    .contact--section {
+        scroll-snap-align: none;
+        overflow: hidden;
+        height: fit-content;
+        padding: 50px 0;
+        h2 {
+            font-size: 4.4rem;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .form--container {
+            width: 100%;
+            height: 1100px;
+        }
+
+    }
+
+    form {
+        div {
+            .inputs--container {
+                .input--box {
+                    width: 100%;
+                    height: 150px;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    flex-direction: column;
+
+                    label {
+                        margin: 0;
+                    }
+                    input {
+                        margin: 0;
+                        height: 50%;
+                        width: 100%;
+                    }
+
+                }
+            }
+        }
+
+        button {
+            width: 100%;
+        }
+    }
+
+    footer {
+        scroll-snap-align: none;
+    }
+
+}
+
+@media (max-width: 840px) {
     nav {
         width: 100%;
-        padding: 0;
+        padding: 20px;
+    
         
         .navlinks--container {
             display: none;
@@ -14,9 +249,169 @@
         .mobile-nav--btn {
             display: block;
             color: $white;
-            margin-left: 20%;
             font-size: 1.5rem;
             z-index: 99;
+            cursor: pointer;
+
+            span {
+                display: none;
+            }
+        }
+
+        .logo--container {
+            
+            p {
+                font-size: 1.5rem;
+            }
+            img{
+                height: 48px;
+                width: 48px;
+
+            }
+
+        }
+
+
+        .mobile-navlinks--container {
+            position: absolute;
+            top:0;
+            left: 0;
+            display: none;
+            width: 100%;
+            height: 100%;
+            background-color: $white;
+            font-size: 5rem;
+            z-index: 98;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: 1s;
+
+            a {
+                color: $black;
+                font-size: 2rem;
+            }
+            
+        }
+
+
+    }
+
+    .hero--section{
+        h1 {
+            font-size: 6rem;
+        }
+    }
+
+    .about-us--section {
+
+        .about-us-text--container {
+            article {
+                font-size: 1.1rem;
+            }
+        }
+
+        .hello-text {
+            h2 {
+                font-size: 3.4rem;
+            }
+        }
+    }
+
+    .services--section {
+        h2 {
+            font-size: 4rem;
+        }
+
+        .cards--container {
+            .card {
+                height: 20%;
+            }
+        }
+    }
+
+    .Modal {
+        padding: 25px;
+    }
+
+    .Overlay {
+        width: 100vw;
+        height: 95%;
+    }
+
+    .modal-header {
+        height: fit-content;
+        img {
+            width: 50px;
+            height: 50px;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+    }
+
+    .modal-body {
+        overflow: scroll;
+        padding-top: 100px;
+        article {
+            padding-top:100px ;
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+    }
+
+    .modal-footer {
+        justify-content: space-between;
+        button {
+            font-size: 1.8rem;
+            padding: 0 15px;
+        }
+
+        h4 {
+            font-size: 1.8rem;
+            text-align: end;
+        }
+    }
+
+    .our-work--section {
+        h2 {
+            font-size: 3.8rem;
+        }
+    }
+
+    .contact--section {
+        h2 {
+            font-size: 3.8rem;
+        }
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    //nav 
+
+    
+
+
+
+    nav {
+        width: 100%;
+        padding: 20px;
+    
+        
+        .navlinks--container {
+            display: none;
+        }
+
+        .mobile-nav--btn {
+            display: block;
+            color: $white;
+            font-size: 1.5rem;
+            z-index: 99;
+            cursor: pointer;
 
             span {
                 display: none;
@@ -63,16 +458,25 @@
     }
 
     .down-arrow {
-        top:99%;
-        left: 50%;
+    display: none;
+        
     }
 
+    .btn {
+        width: 80%;
+        font-size: 1.2rem 
+    }
+
+    .btn::after {
+        width: 100%;
+    }
 
 
     .hero--section {
         scroll-snap-align: none;
-        height:90vh;
+        height: 90vh;
         justify-content: flex-start;
+      
     
 
         h1 {
@@ -83,15 +487,17 @@
     }
 
     .about-us--section {
+        overflow: hidden;
         scroll-snap-align: none;
-        height: 1000px;
-        width: 100%;
+        height: fit-content;
 
         .about-us-text--container {
-            width: 100%;
             height: 100%;
-            justify-content: center;
-            align-items: center;
+            width: fit-content;
+            
+            
+            // background-size: auto;
+           
 
             h2 {
                 text-align: center;
@@ -122,18 +528,74 @@
 
         .cards--container {
             width: 100%;
+            height: fit-content;
             .card {
                 padding: 20px;
                 width: 100%;
                 height: 400px;
-            }
+
+                .card-body {
+                    p {
+                        font-size: 1rem;
+                    }
+                }
+            }   
+        }   
+    }
+
+    //modal
+
+    .Modal {
+        padding: 25px;
+    }
+
+    .Overlay {
+        width: 100vw;
+        height: 95%;
+    }
+
+    .modal-header {
+        height: fit-content;
+        img {
+            width: 30px;
+            height: 30px;
+        }
+
+        h2 {
+            font-size: 1.4rem;
         }
     }
+
+    .modal-body {
+        overflow: scroll;
+        padding-top: 100px;
+        article {
+            padding-top:100px ;
+            font-size: 0.9rem;
+            font-weight: 400;
+        }
+    }
+
+    .modal-footer {
+        justify-content: space-between;
+        button {
+            font-size: 0.9rem;
+            padding: 0 15px;
+        }
+
+        h4 {
+            font-size: 1rem;
+            text-align: end;
+        }
+    }
+
+
 
     .our-work--section {
         scroll-snap-align: none;
         height: fit-content;
         padding: 0;
+        overflow: hidden;
 
         h2 {
             font-size: 2rem;
@@ -141,6 +603,7 @@
 
         .our-work--container {
             flex-wrap: wrap;
+            height: fit-content;
             
             .work-card {
                 height: 800px;
@@ -157,7 +620,697 @@
                 }
             }
         }
+        
     }
 
+    
+
+    .contact--section {
+        scroll-snap-align: none;
+        overflow: hidden;
+        height: fit-content;
+        padding: 100px 0;
+        h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .form--container {
+            width: 100%;
+            height: 1000px;
+        }
+
+    }
+
+
+    form {
+        div {
+            .inputs--container {
+                .input--box {
+                    width: 100%;
+                    height: 150px;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    flex-direction: column;
+
+                    label {
+                        margin: 0;
+                    }
+                    input {
+                        margin: 0;
+                        height: 50%;
+                        width: 100%;
+                    }
+
+                }
+            }
+        }
+
+        button {
+            width: 100%;
+        }
+    }
+
+    .circles--container {
+       width: 100%;
+       left: 0;
+    }
+
+   
+    footer { 
+        overflow: hidden;
+        scroll-snap-align: none;
+    }
+
+}
+
+@media (max-width: 374px) {
+
+    //nav 
+
+    
+
+
+
+    nav {
+        width: 100%;
+        padding: 20px;
+    
+        
+        .navlinks--container {
+            display: none;
+        }
+
+        .mobile-nav--btn {
+            display: block;
+            color: $white;
+            font-size: 1rem;
+            z-index: 99;
+            cursor: pointer;
+
+            span {
+                display: none;
+            }
+        }
+
+        .logo--container {
+            
+            p {
+                font-size: 1rem;
+            }
+            img{
+                height: 48px;
+                width: 48px;
+
+            }
+
+        }
+
+
+        .mobile-navlinks--container {
+            position: absolute;
+            top:0;
+            left: 0;
+            display: none;
+            width: 100%;
+            height: 100%;
+            background-color: $white;
+            font-size: 5rem;
+            z-index: 98;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: 1s;
+
+            a {
+                color: $black;
+                font-size: 2rem;
+            }
+            
+        }
+
+
+    }
+
+    .down-arrow {
+    display: none;
+        
+    }
+
+    .btn {
+        width: 80%;
+        font-size: 1.2rem 
+    }
+
+    .btn::after {
+        width: 100%;
+    }
+
+
+    .hero--section {
+        scroll-snap-align: none;
+        height: 90vh;
+        justify-content: flex-start;
+      
+    
+
+        h1 {
+            margin-top: 50px;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        button {
+            font-size: 1rem;
+        }
+    }
+
+    .about-us--section {
+        overflow: hidden;
+        scroll-snap-align: none;
+        height: fit-content;
+
+        .about-us-text--container {
+            height: 100%;
+            width: fit-content;
+            
+            
+            // background-size: auto;
+           
+
+            h2 {
+                text-align: center;
+                font-size: 2rem;
+            }
+
+            article {
+                font-size: 1.2rem;
+            }
+        }
+
+        .hello-text {
+            display: none;
+
+            h2 {
+                display: none;
+            }
+        }
+    }
+
+    .services--section {
+        scroll-snap-align: none;
+        height: fit-content;
+        padding: 1%;
+        h2 {
+            font-size: 2rem;
+        }
+
+        .cards--container {
+            width: 100%;
+            height: fit-content;
+            .card {
+                padding: 20px;
+                width: 100%;
+                height: 400px;
+
+                .card-body {
+                    p {
+                        font-size: 0.9rem;
+                    }
+                }
+            }   
+        }   
+    }
+
+    //modal
+
+    .Modal {
+        padding: 25px;
+    }
+
+    .Overlay {
+        width: 100vw;
+        height: 95%;
+    }
+
+    .modal-header {
+        height: fit-content;
+        img {
+            width: 30px;
+            height: 30px;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+        }
+    }
+
+    .modal-body {
+        overflow: scroll;
+        padding-top: 100px;
+        article {
+            padding-top:100px ;
+            font-size: 0.9rem;
+            font-weight: 400;
+        }
+    }
+
+    .modal-footer {
+        justify-content: space-between;
+        button {
+            font-size: 0.9rem;
+            padding: 0 15px;
+        }
+
+        h4 {
+            font-size: 1rem;
+            text-align: end;
+        }
+    }
+
+
+
+    .our-work--section {
+        scroll-snap-align: none;
+        height: fit-content;
+        padding: 0 10px;
+
+        h2 {
+            font-size: 1.7rem;
+        }
+
+        .our-work--container {
+            flex-wrap: wrap;
+            padding: 0;
+            height: fit-content;
+            
+            .work-card {
+                height: 800px;
+                width: 100%;
+
+                .card-footer {
+                    h3 {
+                        font-size: 2rem;
+                    }
+
+                    h4 {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    
+
+    .contact--section {
+        scroll-snap-align: none;
+        overflow: hidden;
+        height: fit-content;
+        padding: 100px 0;
+        h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .form--container {
+            width: 100%;
+            height: 1000px;
+        }
+
+    }
+
+
+    form {
+        div {
+            .inputs--container {
+                .input--box {
+                    width: 100%;
+                    height: 150px;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    flex-direction: column;
+
+                    label {
+                        margin: 0;
+                    }
+                    input {
+                        margin: 0;
+                        height: 50%;
+                        width: 100%;
+                    }
+
+                }
+            }
+        }
+
+        button {
+            width: 100%;
+        }
+    }
+
+    .circles--container {
+       width: 100%;
+       left: 0;
+    }
+
+   
+    footer { 
+        scroll-snap-align: none;
+        
+        .footer--info-container {
+            .footer--contact-info {
+                a {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+}
+
+
+//apple watch
+
+@media (max-width: 180px) {
+
+    //nav 
+
+    
+
+
+
+    nav {
+        width: 100%;
+        padding: 20px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+    
+        
+        .navlinks--container {
+            display: none;
+        }
+
+        .mobile-navlinks--container {
+            width: 100%;
+            height: fit-content;
+            overflow: auto;
+            display: flex;
+            flex-direction: column;
+            padding-top: 250px;
+           
+        }
+
+        .mobile-nav--btn {
+            display: block;
+            color: $white;
+            font-size: 1rem;
+            z-index: 99;
+            cursor: pointer;
+
+            span {
+                display: none;
+            }
+        }
+
+        .logo--container {
+            
+            p {
+                font-size: 1rem;
+            }
+            img{
+                height: 24px;
+                width: 24px;
+
+            }
+
+        }
+
+
+        .mobile-navlinks--container {
+            position: absolute;
+            top:0;
+            left: 0;
+            display: none;
+            width: 100%;
+            height: 100%;
+            background-color: $white;
+            font-size: 5rem;
+            z-index: 98;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: 1s;
+
+            a {
+                color: $black;
+                font-size: 2rem;
+            }
+            
+        }
+
+
+    }
+
+    .down-arrow {
+    display: none;
+        
+    }
+
+    .btn {
+        width: 80%;
+        font-size: 1.2rem 
+    }
+
+    .btn::after {
+        width: 100%;
+    }
+
+
+    .hero--section {
+        scroll-snap-align: none;
+        height: 300px;
+        justify-content: flex-start;
+      
+    
+
+        h1 {
+            margin-top: 50px;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        button {
+           display: none;
+        }
+    }
+
+    .about-us--section {
+        overflow: hidden;
+        scroll-snap-align: none;
+        height: fit-content;
+
+        .about-us-text--container {
+            height: 100%;
+            width: fit-content;
+            
+            
+            // background-size: auto;
+           
+
+            h2 {
+                text-align: center;
+                font-size: 2rem;
+            }
+
+            article {
+                font-size: 1.2rem;
+            }
+        }
+
+        .hello-text {
+            display: none;
+
+            h2 {
+                display: none;
+            }
+        }
+    }
+
+    .services--section {
+        scroll-snap-align: none;
+        height: fit-content;
+        padding: 1%;
+        h2 {
+            font-size: 2rem;
+        }
+
+        .cards--container {
+            width: 100%;
+            height: fit-content;
+            .card {
+                padding: 20px;
+                width: 100%;
+                height: 400px;
+
+                .card-body {
+                    p {
+                        font-size: 0.9rem;
+                    }
+                }
+            }   
+        }   
+    }
+
+    //modal
+
+    .Modal {
+        padding: 25px;
+    }
+
+    .Overlay {
+        width: 100vw;
+        height: 95%;
+    }
+
+    .modal-header {
+        height: fit-content;
+        img {
+            width: 30px;
+            height: 30px;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+        }
+    }
+
+    .modal-body {
+        overflow: scroll;
+        padding-top: 100px;
+        article {
+            padding-top:100px ;
+            font-size: 0.9rem;
+            font-weight: 400;
+        }
+    }
+
+    .modal-footer {
+        justify-content: space-between;
+        button {
+            font-size: 0.9rem;
+            padding: 0 15px;
+        }
+
+        h4 {
+            font-size: 1rem;
+            text-align: end;
+        }
+    }
+
+
+
+    .our-work--section {
+        scroll-snap-align: none;
+        height: fit-content;
+        padding: 0 10px;
+
+        h2 {
+            font-size: 1.7rem;
+        }
+
+        .our-work--container {
+            flex-wrap: wrap;
+            padding: 0;
+            height: fit-content;
+            
+            .work-card {
+                height: 800px;
+                width: 100%;
+
+                .card-footer {
+                    h3 {
+                        font-size: 2rem;
+                    }
+
+                    h4 {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    
+
+    .contact--section {
+        scroll-snap-align: none;
+        overflow: hidden;
+        height: fit-content;
+        padding: 100px 0;
+        h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .form--container {
+            width: 100%;
+            height: 1000px;
+        }
+
+    }
+
+
+    form {
+        div {
+            .inputs--container {
+                .input--box {
+                    width: 100%;
+                    height: 150px;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    flex-direction: column;
+
+                    label {
+                        margin: 0;
+                    }
+                    input {
+                        margin: 0;
+                        height: 50%;
+                        width: 100%;
+                    }
+
+                }
+            }
+        }
+
+        button {
+            width: 100%;
+        }
+    }
+
+    .circles--container {
+       width: 100%;
+       left: 0;
+    }
+
+   
+    footer { 
+        scroll-snap-align: none;
+        
+        .footer--info-container {
+            .footer--contact-info {
+                a {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
 
 }
