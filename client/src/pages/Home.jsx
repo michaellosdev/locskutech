@@ -94,7 +94,7 @@ function Home() {
                 modal();
                 setModalData(card)
               }}>
-                <img src={card.icon} alt="" />
+                <img src={card.icon} alt={`card icon ${card.name}`} />
                 <h3>{card.name}</h3>
               </div>
           
@@ -133,7 +133,7 @@ function Home() {
             <div className='line-2'></div>
           </div>
           <div className='modal-header'>
-            <img src={modalData.icon} alt="" />
+            <img src={modalData.icon} alt={`big card icon ${modalData.name}`} />
             <h2>{modalData.name}</h2>
           </div>
           <div className='modal-body'>
