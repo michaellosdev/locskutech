@@ -1,5 +1,7 @@
 @media (max-width: 1800px) {
     .about-us--section {
+
+        overflow: hidden;
         .about-us-text--container {
             h2 {
                 font-size: 5rem;
@@ -21,6 +23,7 @@
     //services
 
     .services--section {
+        overflow: hidden;
         .cards--container {
             .card {
                 .card-header {
@@ -53,12 +56,14 @@
     }
 
     .hero--section {
+        overflow: hidden;
         h1 {
             font-size: 7rem;
         }
     }
 
     .about-us--section {
+        overflow: hidden;
         .about-us-text--container {
             h2 {
                 font-size: 4rem;
@@ -77,6 +82,7 @@
     }
 
     .services--section {
+        overflow: hidden;
         h2 {
             font-size: 5rem;
         }
@@ -111,10 +117,12 @@
     }
 
     .hero--section {
+        overflow: hidden;
         scroll-snap-align: none;
     }
 
     .about-us--section {
+        overflow: hidden;
         scroll-snap-align: none;
         .about-us-text--container {
             h2 {
@@ -134,6 +142,7 @@
     }
 
     .services--section {
+        overflow: hidden;
         scroll-snap-align: none;
         height: fit-content;
         h2 {
@@ -158,6 +167,7 @@
     }
 
     .modal-footer {
+        
         button {
             font-size: 1.5rem;
         }
@@ -170,6 +180,7 @@
     .our-work--section {
         height: fit-content;
         scroll-snap-align: none;
+        overflow: hidden;
 
         h2 {
             font-size: 4.5rem;
@@ -322,12 +333,14 @@
     }
 
     .hero--section{
+        overflow: hidden;
         h1 {
             font-size: 6rem;
         }
     }
 
     .about-us--section {
+        overflow: hidden;
 
         .about-us-text--container {
             article {
@@ -343,6 +356,7 @@
     }
 
     .services--section {
+        overflow: hidden;
         h2 {
             font-size: 4rem;
         }
@@ -399,12 +413,14 @@
     }
 
     .our-work--section {
+        overflow: hidden;
         h2 {
             font-size: 3.8rem;
         }
     }
 
     .contact--section {
+        overflow: hidden;
         h2 {
             font-size: 3.8rem;
         }
@@ -522,6 +538,7 @@
 
 
     .hero--section {
+        overflow: hidden;
         scroll-snap-align: none;
         height: 90vh;
         justify-content: flex-start;
@@ -568,6 +585,7 @@
     }
 
     .services--section {
+        overflow: hidden;
         scroll-snap-align: none;
         height: fit-content;
         padding: 1%;
@@ -843,6 +861,7 @@
 
 
     .hero--section {
+        overflow: hidden;
         scroll-snap-align: none;
         height: 90vh;
         justify-content: flex-start;
@@ -893,6 +912,7 @@
     }
 
     .services--section {
+        overflow: hidden;
         scroll-snap-align: none;
         height: fit-content;
         padding: 1%;
@@ -966,6 +986,7 @@
 
 
     .our-work--section {
+        overflow: hidden;
         scroll-snap-align: none;
         height: fit-content;
         padding: 0 10px;
@@ -1077,6 +1098,7 @@
     }
     
     footer { 
+        overflow: hidden;
         scroll-snap-align: none;
         
         .footer--info-container {
